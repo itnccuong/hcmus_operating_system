@@ -39,6 +39,9 @@ int main(int argc, char *argv[]) {
       }
       p = buf;
       offset = 0;
+      for(int i = argc - 1; i < arg_pivot; ++i) {
+        v[i] = 0;
+      }
       arg_pivot = argc - 1;
     } else buf[offset++] = ch;
   } 
